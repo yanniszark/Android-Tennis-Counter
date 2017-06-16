@@ -12,25 +12,24 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-    public void startNewGame(View view){
+    public void startNewGame(View view) {
         /* Get player names */
         EditText player1NameEditText = (EditText) findViewById(R.id.player_1_name);
         EditText player2NameEditText = (EditText) findViewById(R.id.player_2_name);
 
         String player1Name = player1NameEditText.getText().toString();
-        if (player1Name.isEmpty()){
+        if (player1Name.isEmpty()) {
             Toast.makeText(this, getString(R.string.player1_enter_name_toast), Toast.LENGTH_SHORT).show();
             return;
         }
         String player2Name = player2NameEditText.getText().toString();
-        if (player2Name.isEmpty()){
+        if (player2Name.isEmpty()) {
             Toast.makeText(this, getString(R.string.player2_enter_name_toast), Toast.LENGTH_SHORT).show();
             return;
         }
@@ -38,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         /* Get serving player */
         int servingPlayer;
         RadioGroup serveRadioGroup = (RadioGroup) findViewById(R.id.serve_radiogroup);
-        switch (serveRadioGroup.getCheckedRadioButtonId()){
+        switch (serveRadioGroup.getCheckedRadioButtonId()) {
             case R.id.player_1_serve:
                 servingPlayer = 1;
                 break;

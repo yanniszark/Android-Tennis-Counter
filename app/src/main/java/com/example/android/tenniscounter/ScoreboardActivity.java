@@ -362,9 +362,9 @@ public class ScoreboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 resetSets();
+                mPopupWindow.dismiss();
                 if (Build.VERSION.SDK_INT >= 23)
                     mainActivityRelativeLayout.setForeground(null);
-                mPopupWindow.dismiss();
             }
         });
         TextView winnerText = (TextView) winnerView.findViewById(R.id.winner_textview);

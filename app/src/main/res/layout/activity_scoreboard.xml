@@ -333,8 +333,8 @@
             android:layout_height="80dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:scaleType="centerInside"
             android:onClick="returnToMainMenu"
+            android:scaleType="centerInside"
             android:src="@drawable/scoreboard_home_button" />
 
     </RelativeLayout>
