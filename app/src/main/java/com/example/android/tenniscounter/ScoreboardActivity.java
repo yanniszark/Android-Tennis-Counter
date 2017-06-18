@@ -28,9 +28,14 @@ public class ScoreboardActivity extends AppCompatActivity {
     private static final int ADVANTAGE = 41;
 
     /* Variables to track in-game, game and set scores */
-    int scorePlayer1 = 0, scorePlayer2 = 0;
-    int gamesPlayer1 = 0, gamesPlayer2 = 0;
-    int setsPlayer1 = 0, setsPlayer2 = 0;
+    int scorePlayer1 = 0;
+    int scorePlayer2 = 0;
+
+    int gamesPlayer1 = 0;
+    int gamesPlayer2 = 0;
+
+    int setsPlayer1 = 0;
+    int setsPlayer2 = 0;
 
     /* Variable to track serving player */
     int currServe;
@@ -40,9 +45,15 @@ public class ScoreboardActivity extends AppCompatActivity {
     String player2Name;
 
     /* Initializing some TextViews as globals to limit use of findViewbyId */
-    TextView scoreView1, scoreView2;
-    TextView gameView1, gameView2;
-    TextView setView1, setView2;
+    TextView scoreView1;
+    TextView scoreView2;
+
+    TextView gameView1;
+    TextView gameView2;
+
+    TextView setView1;
+    TextView setView2;
+
     TextView serveView;
     RelativeLayout mainActivityRelativeLayout;
 
@@ -379,7 +390,3 @@ public class ScoreboardActivity extends AppCompatActivity {
         startActivity(new Intent(ScoreboardActivity.this, MainActivity.class));
     }
 }
-
-
-
-

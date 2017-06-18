@@ -21,5 +21,6 @@
     <string name="player1_enter_name_toast">Enter a name for Player 1</string>
     <string name="player2_enter_name_toast">Enter a name for Player 2</string>
     <string name="select_serving_player_toast">Select the player to serve first</string>
+    <string name="serve">Serve: </string>
 
 </resources>
